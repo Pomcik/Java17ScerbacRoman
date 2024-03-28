@@ -19,36 +19,36 @@ public class Homework9 {
         lincoln.printCarsInfo("");
     }
 
-    public static class Student {
+    static class Student {
         String name;
         int age;
         int mediumMark;
 
-        public Student() {
+        Student() {
             name = "Ольга Петровна";
             age = 21;
             mediumMark = 2;
         }
 
-        public Student(String studentName, int studentAge, int studentMediumMark) {
+        Student(String studentName, int studentAge, int studentMediumMark) {
             name = studentName;
             age = studentAge;
             mediumMark = studentMediumMark;
         }
 
-        public Student(String studentName, int studentAge) {
+        Student(String studentName, int studentAge) {
             name = studentName;
             age = studentAge;
             mediumMark = 7;
         }
 
-        public void printStudentInfo() {
+        void printStudentInfo() {
             System.out.println("Имя: " + name);
             System.out.println("Возраст: " + age);
             System.out.println("Средний Балл: " + mediumMark);
         }
 
-        public void checkMark() {
+        void checkMark() {
             if (mediumMark > 5) {
                 System.out.println("Оценка студента больше чем 5.");
                 System.out.println("--------------------------------");
@@ -59,24 +59,24 @@ public class Homework9 {
         }
     }
 
-    public static class Cars {
+    static class Cars {
         String carName;
         double engineSize;
         int carPrice;
 
-        public Cars(String brand, double engine, int price) {
+        Cars(String brand, double engine, int price) {
             carName = brand;
             engineSize = engine;
             carPrice = price;
         }
 
-        public Cars() {
+        Cars() {
             carName = "БеМеВе";
             engineSize = 2.8;
             carPrice = 100500;
         }
 
-        public void printCarsInfo(String test) {
+        void printCarsInfo(String test) {
             System.out.println("Марка: " + carName);
             System.out.println("Обьём двигателя: " + engineSize);
             System.out.println("Цена: " + carPrice + test);
